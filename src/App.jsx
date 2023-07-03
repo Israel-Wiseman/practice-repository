@@ -1,20 +1,23 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
-import Styles from './App.module.css';
 import VansList from './components/VansList';
 import Vans from './components/Vans';
+import 'bootstrap/dist/css/bootstrap.css';
+
+
+
 
 function App() {
 
   return (
     <div>
 
-    <nav className={Styles.navBar}>
-      <Link to='/'>Home</Link>
-      <Link to='/about'>About</Link>
-      <Link to='/vansList'> Vans List </Link>
-      <Link to='/vans'> Vans </Link>
+    <nav className='nav'>
+      <Link className='nav-link' to='/'>Home</Link>
+      <Link className='nav-link' to='/about'>About</Link>
+      <Link className='nav-link' to='/vansList'> Vans List </Link>
+      <Link className='nav-link' to='/vans'> Vans </Link>
     </nav>
 
       <Routes>
